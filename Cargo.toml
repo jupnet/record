@@ -25,3 +25,19 @@ check-cfg = [
     'cfg(target_os, values("solana"))',
     'cfg(feature, values("frozen-abi", "no-entrypoint"))',
 ]
+
+[workspace.dependencies]
+solana-account = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-account-info = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-address = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-instruction = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-msg = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-program-entrypoint = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-program-error = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-program-pack = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-rent = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-system-interface = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+
+[patch.crates-io]
+jupnet-signature = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+jupnet-signer = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
